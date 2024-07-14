@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artopia</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes moveBackground {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 600px 600px;
+        }
+      }
+
+      body {
+        background-image: url("/images/cutesy.png");
+        background-size: 1000px;
+        background-repeat: repeat;
+        background-position: center;
+        animation: moveBackground 30s linear infinite alternate;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="text-white py-4">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <a href="#" class="cursor-pointer">
+          <img
+            src="images/logonobg.png"
+            class="text-2xl font-bold text-pink-500 w-40 h-auto"
+          />
+        </a>
+        <div>
+          <ul class="flex space-x-4 text-pink-500">
+            <li>
+              <a
+                href="#features_section"
+                class="text-black cursor-pointer rounded-md px-8 py-3 bg-white transition duration-200 font-mono font-bold mr-2.5 hover:text-white hover:bg-pink-400 hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.25rem_0.25rem_white] active:transform-none active:shadow-none"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-black cursor-pointer rounded-md px-8 py-3 bg-white transition duration-200 font-mono font-bold mr-2.5 hover:text-white hover:bg-pink-400 hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.25rem_0.25rem_white] active:transform-none active:shadow-none"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/AminaHwess/Artopia"
+                class="text-black cursor-pointer rounded-md px-8 py-3 bg-white transition duration-200 font-mono font-bold mr-2.5 hover:text-white hover:bg-pink-400 hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[0.25rem_0.25rem_white] active:transform-none active:shadow-none"
+                >Check The App</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+      <div class="text-center">
+        <img
+          src="images/artopialogo.png"
+          class="mx-auto h-200 w-300 p-3"
+          alt="Logo"
+        />
+        <h1 class="text-4xl font-bold mb-4 text-pink-500 font-serif font-bold">
+          Welcome to Artopia
+        </h1>
+        <p class="md:text-2xl text-xl font-bold font-serif text-black">
+          Dive into Artopia: Your vibrant community for artists to showcase,
+          connect, sell, and grow. Explore art therapy and educational content.
+          My goal is to create a welcoming and inclusive space where artists
+          from all backgrounds can come together to inspire, collaborate, and
+          thrive. Join us on your artistic journey today!
+        </p>
+        <p class="mt-4">
+          <a
+            href="https://github.com/AminaHwess"
+            class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-md transition duration-300 ease-in-out"
+            >Learn More</a
+          >
+        </p>
+      </div>
+
+      <!-- Features Section -->
+      <div id="features_section" class="mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg p-6 shadow-md text-center transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+          >
+            <img
+              src="images/creativecafe.png"
+              className="card-image w-70 h-40 object-cover p-3 ml-20"
+              alt="Showcase Art"
+            />
+            <h2 class="text-xl font-semibold mb-2">Showcase Your Art</h2>
+            <p class="text-gray-700">
+              Display your artwork in a visually stunning gallery designed to
+              highlight your talent.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg p-6 shadow-md text-center transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+          >
+            <img
+              src="images/arttherapy.png"
+              className="card-image w-70 h-40 object-cover p-3 ml-20"
+              alt="Connect"
+            />
+            <h2 class="text-xl font-semibold mb-2">Connect with Creatives</h2>
+            <p class="text-gray-700">
+              Network and collaborate with artists from around the world,
+              fostering new ideas and friendships.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg p-6 shadow-md text-center transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+          >
+            <img
+              src="images/artmarket.png"
+              style="height: 57vh"
+              class="card-image w-70 object-cover p-3 mx-auto d-block"
+              alt="Market"
+            />
+            <h2 class="text-xl font-semibold mb-2">Sell Your Art</h2>
+            <p class="text-gray-700">
+              Set up your online shop to sell your artwork directly to your fans
+              and collectors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-transparent text-white font-mono py-8 px-4 relative"
+      id="about"
+    >
+      <div class="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-8">
+        <div>
+          <img src="images/logonobg.png" alt="Artopia Logo" />
+          <p class="py-3 text-gray-500">
+            Join a vibrant community where artists can showcase their work,
+            connect with fellow creatives, sell their art, explore art therapy,
+            and access educational content. Discover your artistic journey with
+            Artopia.
+          </p>
+        </div>
+        <div class="lg:col-span-2 flex justify-evenly text-black">
+          <div class="font-mono md:text-2xl text-lg ml-3">
+            <h6 class="text-[#ff90e8] font-bold">Browse</h6>
+            <ul>
+              <li class="py-2 text-sm">
+                <a>Creative Café</a>
+              </li>
+              <li class="py-2 text-sm">
+                <a>Artistic Avenue</a>
+              </li>
+            </ul>
+          </div>
+          <div class="font-mono md:text-2xl text-lg ml-3">
+            <h6 class="text-[#ff90e8] font-bold">About The Creator</h6>
+            <ul>
+              <li class="py-2 text-sm">
+                <p>
+                  Meet Amina Hwess, an English major <br />
+                  spearheading the development of <br />
+                  the Artopia web application.
+                </p>
+                <img
+                  src="images/me.jpeg"
+                  class="h-12 w-12 rounded-full mx-auto"
+                  alt="Profile Picture"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="font-mono md:text-2xl text-lg ml-3">
+            <h6 class="text-[#ff90e8] font-bold">Contact Us</h6>
+            <ul>
+              <li class="py-2 text-sm flex items-center">
+                <a class="flex items-center"> Send Us An Inquiry </a>
+                <a
+                  href="https://www.linkedin.com/in/amina-hwess-88b91a219/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="ml-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-blue-600"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M18.662 0H1.337C.6 0 0 .6 0 1.337v17.326C0 19.4.6 20 1.337 20h17.325c.736 0 1.338-.6 1.338-1.337V1.337C20 .6 19.4 0 18.662 0zM6.193 17.071H3.075V7.607h3.118v9.464zM4.634 6.275a1.956 1.956 0 11.001-3.911 1.956 1.956 0 01-.001 3.911zM16.93 17.071h-3.118v-5.644c0-1.345-.027-3.078-1.874-3.078-1.876 0-2.16 1.464-2.16 2.983v5.739H7.65V7.607h2.995v1.585c.397-.607 1.088-1.177 2.827-1.177 2.094 0 3.913 1.368 3.913 4.204v5.852z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/AminaHwess"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="ml-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-700"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.477 0 10c0 4.419 2.865 8.17 6.839 9.49.5.09.682-.217.682-.482 0-.237-.009-.865-.014-1.7-2.782.603-3.37-1.338-3.37-1.338-.455-1.154-1.113-1.462-1.113-1.462-.91-.623.069-.61.069-.61 1.006.071 1.536 1.034 1.536 1.034.895 1.532 2.347 1.09 2.92.832.092-.649.349-1.09.635-1.342-2.22-.251-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.035-2.68-.103-.252-.449-1.268.099-2.638 0 0 .837-.268 2.75 1.022A9.507 9.507 0 0110 5.463c.85.002 1.705.114 2.504.336 1.913-1.29 2.747-1.022 2.747-1.022.552 1.37.204 2.386.1 2.638.646.696 1.034 1.59 1.034 2.68 0 3.842-2.338 4.688-4.565 4.935.359.309.678.919.678 1.852 0 1.337-.012 2.416-.012 2.743 0 .267.18.578.688.48C17.138 18.167 20 14.418 20 10c0-5.523-4.477-10-10-10z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-gray-400 absolute bottom-4 left-0 right-0">
+        &copy; 2024 ARTOPIA
+      </p>
+    </footer>
+  </body>
+</html>
